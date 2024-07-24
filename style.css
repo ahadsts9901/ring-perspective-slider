@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.items {
+    display: flex;
+    gap: 1em;
+    padding: 8em;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    perspective: 1000px;
+    overflow-y: hidden;
+}
+
+.item {
+    scroll-snap-align: center;
+    transform-style: preserve-3d;
+}
+
+.item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
